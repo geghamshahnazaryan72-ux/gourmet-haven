@@ -3,88 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourmet Haven - Restaurant</title>
-    <!-- Connecting CSS file -->
+    <title>Gegham_Dev // Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header & Navigation -->
     <header>
-        <a href="#" class="logo">Gourmet Haven</a>
+        <a href="#home" class="logo">GEGHAM_DEV</a>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservation">Reservation</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
+        <a href="#" class="resume-btn">resume_v4.pdf</a>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Experience Fine Dining</h1>
-        <p>Discover exquisite dishes crafted with passion and fresh ingredients.</p>
-        <a href="#reservation" class="btn">Book a Table</a>
+        <div class="hero-content">
+            <div class="status-badge">
+                <span class="dot"></span> SYSTEM ONLINE // AVAILABLE FOR HIRE
+            </div>
+            <h1>FRONTEND<br>DEVELOPER_</h1>
+            <p>Hi, I'm Gegham. Crafting high-performance web experiences, clean interfaces, and modern interactive applications using HTML, CSS, and JavaScript.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">VIEW PROJECTS &rarr;</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <div class="card-header">
+                <span>SYS.STATUS: NORMAL</span>
+                <span>UPTIME: 99.9%</span>
+            </div>
+            <div class="card-body">
+                <div class="stat-bar">
+                    <label>CPU_LOAD</label>
+                    <div class="progress"><div class="fill" style="width: 65%;"></div></div>
+                    <span>65%</span>
+                </div>
+                <div class="stat-bar">
+                    <label>MEM_USAGE</label>
+                    <div class="progress"><div class="fill" style="width: 40%;"></div></div>
+                    <span>40%</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="active-projects-count">02</span>
+                <span class="active-label">ACTIVE_PROJECTS</span>
+            </div>
+        </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu-section">
-        <h2 class="section-title">Our Delicious Menu</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Steak">
-                <div class="menu-content">
-                    <h3>Grilled Ribeye Steak</h3>
-                    <p>Juicy prime beef grilled to perfection, served with seasonal veggies.</p>
-                    <span class="price">$28.00</span>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I use to bring ideas to life.</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Semantic markup & modern layout structure.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Advanced styling, flexbox, grid & responsive design.</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>ES6+, DOM manipulation, interactivity & logic.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Git / GitHub</h3>
+                <p>Version control and collaborative workflow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Here are some of my projects where I've turned code into cool, functional stuff.</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Restaurant Website</h3>
+                    <p>A modern, responsive restaurant website featuring a dynamic menu grid and an interactive table reservation form.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pizza">
-                <div class="menu-content">
-                    <h3>Truffle Mushroom Pizza</h3>
-                    <p>Hand-tossed crust topped with wild mushrooms, truffle oil, and mozzarella.</p>
-                    <span class="price">$22.00</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Dessert">
-                <div class="menu-content">
-                    <h3>Chocolate Lava Cake</h3>
-                    <p>Warm chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
-                    <span class="price">$10.00</span>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Cyber Portfolio Site</h3>
+                    <p>An interactive developer portfolio designed with a futuristic dark theme, custom status panels, and smooth navigation.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Reservation Section -->
-    <section id="reservation" class="reservation-section">
-        <h2 class="section-title">Book a Table</h2>
-        <form class="reservation-form" id="resForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="date" required>
-            <select required>
-                <option value="">Select Guests</option>
-                <option value="1">1 Person</option>
-                <option value="2">2 People</option>
-                <option value="4">4 People</option>
-                <option value="6">6+ People</option>
-            </select>
-            <button type="submit" class="btn">Confirm Reservation</button>
-        </form>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Me.</h2>
+                <div class="store-hours">
+                    <h4>Location</h4>
+                    <p>Armenia</p>
+                </div>
+                <div class="contacts-details">
+                    <h4>Direct Contact</h4>
+                    <p>gegham@dev.com<br>+374 XX XXX XXX</p>
+                </div>
+            </div>
+            <div class="contact-form-box">
+                <h3>Contact form</h3>
+                <form id="contactForm">
+                    <label>NAME</label>
+                    <input type="text" placeholder="Your Name" required>
+                    <label>EMAIL</label>
+                    <input type="email" placeholder="your@email.com" required>
+                    <label>MESSAGE</label>
+                    <textarea rows="4" placeholder="Your message here..." required></textarea>
+                    <button type="submit" class="btn-primary">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
-        <p>&copy; 2026 Gourmet Haven Restaurant. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2026 Gegham. All rights reserved.</p>
     </footer>
 
-    <!-- Connecting JavaScript file -->
     <script src="script.js"></script>
-
 </body>
 </html>

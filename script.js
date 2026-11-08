@@ -1,5 +1,5 @@
-document.getElementById('resForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you! Your table has been successfully reserved.');
+    alert('TRANSMISSION SUCCESSFUL: Your message has been sent, Gegham.');
     this.reset();
 });
