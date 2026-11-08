@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Restaurant</title>
+    <!-- Connecting CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <a href="#" class="logo">Gourmet Haven</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Experience Fine Dining</h1>
+        <p>Discover exquisite dishes crafted with passion and fresh ingredients.</p>
+        <a href="#reservation" class="btn">Book a Table</a>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">Our Delicious Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Steak">
+                <div class="menu-content">
+                    <h3>Grilled Ribeye Steak</h3>
+                    <p>Juicy prime beef grilled to perfection, served with seasonal veggies.</p>
+                    <span class="price">$28.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pizza">
+                <div class="menu-content">
+                    <h3>Truffle Mushroom Pizza</h3>
+                    <p>Hand-tossed crust topped with wild mushrooms, truffle oil, and mozzarella.</p>
+                    <span class="price">$22.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Dessert">
+                <div class="menu-content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+                    <span class="price">$10.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <h2 class="section-title">Book a Table</h2>
+        <form class="reservation-form" id="resForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="date" required>
+            <select required>
+                <option value="">Select Guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="4">4 People</option>
+                <option value="6">6+ People</option>
+            </select>
+            <button type="submit" class="btn">Confirm Reservation</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Gourmet Haven Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- Connecting JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
